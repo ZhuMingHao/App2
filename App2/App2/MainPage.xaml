@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="App2.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:App2">
+    <StackLayout>
+        <ActivityIndicator x:Name="test"
+        IsRunning="{Binding Source={x:Reference Img},Path=IsLoading}"
+        IsVisible="{Binding Source={x:Reference Img},Path=IsLoading}" />
+        <local:CustomImage x:Name="Img" PropertyChanged="Img_PropertyChanged">
+            <local:CustomImage.Source>
+                <UriImageSource CachingEnabled="False" Uri="https://unsplash.it/1980/1080/?random" />
+            </local:CustomImage.Source>
+        </local:CustomImage>
+    </StackLayout>
+</ContentPage>
