@@ -8,7 +8,7 @@
         <ActivityIndicator x:Name="test"
         IsRunning="{Binding Source={x:Reference Img},Path=IsLoading}"
         IsVisible="{Binding Source={x:Reference Img},Path=IsLoading}" />
-        <local:CustomImage x:Name="Img" PropertyChanged="Img_PropertyChanged">
+        <local:CustomImage x:Name="Img">
             <local:CustomImage.Source>
                 <UriImageSource CachingEnabled="False" Uri="https://unsplash.it/1980/1080/?random" />
             </local:CustomImage.Source>

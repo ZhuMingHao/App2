@@ -14,16 +14,5 @@ namespace App2
         {
             InitializeComponent();
         }
-
-        private void Img_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-        }
-    }
-
-    public class imagesource : ImageSource
-    {
-        public imagesource()
-        {
-        }
     }
 }
